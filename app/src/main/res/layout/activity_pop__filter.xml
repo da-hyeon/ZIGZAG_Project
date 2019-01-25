@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.Popup.Pop_Filter">
+
+    <LinearLayout
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_centerInParent="true"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="쇼핑몰 필터"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/button_Reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:background="@drawable/buttonshape_mint_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="초기화"
+                android:textColor="#53bec2"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="연령대"
+            android:textColor="#6e6e6e"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f2f5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/button_cho10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_mint_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="10대 초반"
+                android:textColor="#53bec2"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_cho20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_mint_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="20대 초반"
+                android:textColor="#53bec2"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_jung20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_mint_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="20대 중반"
+                android:textColor="#53bec2"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_hu20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_mint_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="20대 후반"
+                android:textColor="#53bec2"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f2f5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/button_cho30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_mint_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="30대 초반"
+                android:textColor="#53bec2"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_jung30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_mint_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="30대 중반"
+                android:textColor="#53bec2"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_hu30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_mint_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="30대 후반"
+                android:textColor="#53bec2"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6e6e6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="스타일"
+            android:textColor="#6e6e6e"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f2f5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/button_style_Peminin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="페미닌"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_Modernsik"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="모던시크"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_Simple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="심플베이직"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f2f5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/button_style_Lovely"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="러블리"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_Unique"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="유니크"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_Misi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="미시스타일"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f2f5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/button_style_Campus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="캠퍼스룩"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_Vintage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="빈티지"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_Sexyglam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="섹시글램"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f2f5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/button_style_School"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="스쿨룩"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_romantic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="로맨틱"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_Office"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="오피스룩"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f2f5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/button_style_Luxury"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="럭셔리"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_style_Hollywood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonshape_red_empty"
+                android:shadowColor="#FFFFFF"
+                android:text="헐리웃스타일"
+                android:textColor="#E81E61"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:id="@+id/buttonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/selectedItem"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="#53bec2"
+            android:gravity="center"
+            android:text="선택 완료"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+</LinearLayout>

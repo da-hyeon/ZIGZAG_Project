@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.ShoppingMall">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorsmTitle"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_exposure_black_24dp"
+                android:text="2017년 2월 5주차 랭킹"
+                android:textColor="#a6a6a6"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buttonFilter"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/buttonSearch"
+                android:background="@drawable/buttonshape_white_full"
+                android:drawableRight="@drawable/ic_gps_not_fixed_a6a6a6_24dp"
+                android:gravity="center"
+                android:text="필터"
+                android:textColor="#a6a6a6" />
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/buttonshape_white_full"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                android:text="검색"
+                android:textColor="#a6a6a6" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_filterList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorsmTitle">
+
+        <TextView
+            android:id="@+id/text_filterList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/ic_gps_not_fixed_black_24dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="필터항목"
+            android:textColor="#53bec2"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>
